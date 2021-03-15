@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assests/styles/style.css" rel="stylesheet">
+    <link href="index.html">
+    <link href="manageProducts.html">
+    <link href="manageCustomers.html">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">
+                        <img id="redDot" src="assests/img/kissclipart-red-dot-clipart-clip-art-cbaa486641b934f4.jpg">
+                        <h8 >Home</h8>
+                    </a>
+                </li>
+
+
+                <a id="manageCustomers" class="nav-link active" aria-current="page" href="manageCustomers.html">
+                    Customers
+                </a>
+
+
+                <!--                <li class="nav-item dropdown">-->
+                <!--                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+                <!--                        Products-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                <!--                        <li><a class="dropdown-item" href="#">Retail Goods</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Beverages</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Cosmetics</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Snacks</a></li>-->
+                <!--                        <li><hr class="dropdown-divider"></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+
+                <a id="manageProducts" class="nav-link active" aria-current="page" href="manageProducts.html">
+                    Products
+                </a>
+
+                <li class="nav-item">
+                    <a id="shopNow" class="nav-link" href="#">
+                        <img id="cartIcon" src="assests/img/icons8-favorite-cart-24.png">
+                        Shop Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--==============================================================-->
+<div id="manageAllProducts">
+    <section class="containerShop w-100 bg-white">
+        <section class="row bg-white">
+            <div class="col-3 bg-white">
+                <form>
+
+                    <div class="col-autoLbl">
+                        <label class="col-form-label">Customer Id</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+
+
+                    <div class="col-autoLbl">
+                        <label  class="col-form-label">Name</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+
+                    <div class="col-autoLbl">
+                        <label  class="col-form-label">Address</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+
+                    <div class="col-autoLbl">
+                        <label  class="col-form-label">Contact</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                </form>
+            </div>
+            <div class="col-2  bg-white">
+                <button class="searchBtn btn-success " type="button">Search </button>
+            </div>
+
+
+            <div class="col-3  bg-white">
+                <form>
+                    <div class="col-autoLbl">
+                        <label class="col-form-label">Product Code</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+
+                    <div class="col-autoLbl">
+                        <label  class="col-form-label">Description</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+
+                    <div class="col-autoLbl">
+                        <label class="col-form-label">QtyOnHand</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="number" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+
+                    <div class="col-autoLbl">
+                        <label for="inputPassword6" class="col-form-label">Unit Price</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                </form>
+            </div>
+            <div class="col-1  bg-white">
+                <button class="searchBtn btn-success " type="button">Search </button>
+                <div class="col-qty">
+                    <label for="inputPassword6" class="col-form-label">Qty</label>
+                </div>
+                <div class="qtyNum">
+                    <input type="number" id="inputPassword6" class="qty" aria-describedby="passwordHelpInline">
+                </div>
+            </div>
+
+
+            <div class="addToCartBtn1 col-3  bg-white">
+                <button class="addToCartBtn btn-success " type="button">Add To Cart </button>
+            </div>
+        </section>
+    </section>
+
+</div>
+<div class="buy">
+    <button class="butCartBtn btn-success " type="button">Buy Cart</button>
+    <button class="butCartBtn btn-danger " type="button">Remove Item</button>
+</div>
+
+
+<div class="col-12 bg-light">
+    <table class="table table-hover">
+        <thead class="bg-light ">
+        <tr>
+            <th>Product Code</th>
+            <th> Description</th>
+            <th>Unit Price</th>
+            <th>Qty</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>PQ001</td>
+            <td>Keeri Samba 10kg</td>
+            <td>450.00</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>PQ002</td>
+            <td>Vim Dishwash Bar</td>
+            <td>120.00</td>
+            <td>20</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="assests/js/bootstrap.js"></script>
+
+</body>
+</html>
